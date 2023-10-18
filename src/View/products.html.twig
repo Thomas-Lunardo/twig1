@@ -1,13 +1,16 @@
-{% extends 'home.html.twig' %}
-
-{% block title %}Instruments{% endblock %}
-
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
     <ul>
-{% for item in products %}
-    <li>{{ item }}</li>
-{% endfor %}
-</ul>
-{% endblock %}
-
-dump($products);
+        {% for produit in products %}
+        <li>{{ produit }}</li>
+            {% endfor %}
+    </ul>
+    {{ dump(products) }}
+</body>
+</html>
