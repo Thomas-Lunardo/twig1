@@ -1,0 +1,13 @@
+{% extends 'home.html.twig' %}
+
+{% block title %}Instruments{% endblock %}
+
+{% block content %}
+    <ul>
+{% for item in products %}
+    <li>{{ item }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
+
+dump($products);
